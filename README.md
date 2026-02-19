@@ -2,7 +2,11 @@
 
 Welcome to the **LifeCare Health Center** repository. This project is a modern, high-performance, and aesthetically pleasing website designed for a healthcare clinic. It features a responsive design, dynamic routing, and a suite of patient-focused tools.
 
-![LifeCare Preview]([https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3] [https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3])
+![LifeCare Preview](https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3)
+
+## 🔗 Live Preview
+
+Check out the live website here: **[https://life-care-health.vercel.app/](https://life-care-health.vercel.app/)**
 
 ## 🚀 Features
 
