@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Medical Blue - Primary */
+    --primary: 210 85% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 85% 96%;
+    --primary-glow: 210 80% 60%;
+
+    /* Medical Green - Secondary */
+    --secondary: 155 55% 42%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 155 55% 94%;
+
+    /* Backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+
+    /* Muted / surface */
+    --muted: 210 30% 97%;
+    --muted-foreground: 215 20% 50%;
+
+    --accent: 210 85% 96%;
+    --accent-foreground: 210 85% 35%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 210 85% 40%;
+    --radius: 0.75rem;
+
+    /* Emergency Red */
+    --emergency: 0 72% 50%;
+    --emergency-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 85% 40% / 0.92), hsl(210 70% 28% / 0.96));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 30% 97%));
+    --gradient-section: linear-gradient(180deg, hsl(210 30% 97%), hsl(0 0% 100%));
+    --gradient-green: linear-gradient(135deg, hsl(155 55% 42%), hsl(175 55% 38%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 24px -6px hsl(210 85% 40% / 0.12);
+    --shadow-hover: 0 12px 40px -8px hsl(210 85% 40% / 0.25);
+    --shadow-hero: 0 20px 60px -15px hsl(210 85% 40% / 0.35);
+
+    /* Sidebar */
+    --sidebar-background: 210 30% 97%;
+    --sidebar-foreground: 220 25% 12%;
+    --sidebar-primary: 210 85% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 30% 92%;
+    --sidebar-accent-foreground: 210 85% 40%;
+    --sidebar-border: 214 20% 90%;
+    --sidebar-ring: 210 85% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  .container-clinic {
+    @apply max-w-7xl mx-auto;
+  }
+  .section-label {
+    @apply text-sm font-semibold uppercase tracking-widest;
+    color: hsl(var(--secondary));
+  }
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight;
+    color: hsl(var(--foreground));
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .card-clinic {
+    @apply rounded-2xl border bg-card p-6 transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+  .card-clinic:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 4px 16px hsl(var(--primary) / 0.35);
+  }
+  .btn-primary:hover {
+    background: hsl(210 85% 35%);
+    box-shadow: 0 8px 24px hsl(var(--primary) / 0.45);
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 border-2;
+    border-color: hsl(var(--primary-foreground));
+    color: hsl(var(--primary-foreground));
+  }
+  .btn-secondary:hover {
+    background: hsl(var(--primary-foreground) / 0.15);
+    transform: translateY(-1px);
+  }
+  .btn-green {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300;
+    background: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+    box-shadow: 0 4px 16px hsl(var(--secondary) / 0.35);
+  }
+  .btn-green:hover {
+    background: hsl(155 55% 37%);
+    box-shadow: 0 8px 24px hsl(var(--secondary) / 0.45);
+    transform: translateY(-1px);
+  }
+  .badge-trust {
+    @apply flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold;
+    background: hsl(var(--primary-foreground) / 0.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid hsl(var(--primary-foreground) / 0.2);
+    color: hsl(var(--primary-foreground));
+  }
+  .service-icon-wrap {
+    @apply w-14 h-14 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300;
+    background: hsl(var(--primary-light));
+  }
+  .service-icon-wrap svg {
+    color: hsl(var(--primary));
+  }
+  .card-clinic:hover .service-icon-wrap {
+    background: hsl(var(--primary));
+  }
+  .card-clinic:hover .service-icon-wrap svg {
+    color: hsl(var(--primary-foreground));
+  }
+  .rating-star {
+    color: hsl(42 90% 55%);
+  }
+  .nav-link {
+    @apply text-sm font-medium transition-colors duration-200 relative;
+    color: hsl(var(--foreground));
+  }
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 rounded-full transition-all duration-300;
+    background: hsl(var(--primary));
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  .nav-link:hover {
+    color: hsl(var(--primary));
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  .animate-slide-right {
+    animation: slideRight 0.6s ease-out forwards;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-24px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+  .pulse-ring::before {
+    content: '';
+    @apply absolute inset-0 rounded-full animate-ping;
+    background: hsl(var(--secondary) / 0.4);
+  }
+  .text-gradient-blue {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-green {
+    background: linear-gradient(135deg, hsl(var(--secondary)), hsl(175 55% 42%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-primary-light {
+    background: hsl(var(--primary-light));
+  }
+  .bg-secondary-light {
+    background: hsl(var(--secondary-light));
+  }
+  .text-primary-color {
+    color: hsl(var(--primary));
+  }
+  .text-secondary-color {
+    color: hsl(var(--secondary));
+  }
+  .border-primary-color {
+    border-color: hsl(var(--primary));
+  }
+  .border-secondary-color {
+    border-color: hsl(var(--secondary));
+  }
+  .bg-emergency {
+    background: hsl(var(--emergency));
+  }
+  .text-emergency {
+    color: hsl(var(--emergency));
+  }
+}
+
+
+/* Scrollbar & Selection */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: hsl(var(--muted)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground) / 0.3); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--primary) / 0.5); }
+::selection { background: hsl(var(--primary) / 0.2); color: hsl(var(--primary)); }
