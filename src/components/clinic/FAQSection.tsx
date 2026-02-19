@@ -4,7 +4,7 @@ import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
 const faqs = [
   {
     q: "How do I book an appointment?",
-    a: "You can book an appointment online using our booking form on this website, call us at (123) 456-7890, or visit the clinic in person. We recommend booking online for the fastest confirmation.",
+    a: "You can book an appointment online using our booking form on this website, call us at 9988324455, or visit the clinic in person. We recommend booking online for the fastest confirmation.",
   },
   {
     q: "Do you accept health insurance?",
@@ -68,8 +68,8 @@ const FAQSection = () => {
               <div
                 key={i}
                 className={`rounded-2xl border overflow-hidden transition-all duration-300 ${open === i
-                    ? "bg-white border-primary/20 shadow-lg ring-1 ring-primary/10"
-                    : "bg-white/50 border-border/60 hover:border-primary/20"
+                  ? "bg-white border-primary/20 shadow-lg ring-1 ring-primary/10"
+                  : "bg-white/50 border-border/60 hover:border-primary/20"
                   }`}
               >
                 <button

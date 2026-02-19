@@ -107,9 +107,9 @@ const AppointmentSection = () => {
             <div className="space-y-6">
               {[
                 { icon: Clock, title: "Working Hours", sub: "Mon–Sat: 9:00 AM – 8:00 PM" },
-                { icon: Phone, title: "Call Us", sub: "(123) 456-7890" },
-                { icon: Mail, title: "Email Us", sub: "appointments@lifecare.com" },
-                { icon: MapPin, title: "Location", sub: "123 Healthcare Ave, NY 10001" },
+                { icon: Phone, title: "Call Us", sub: "9988324455" },
+                { icon: Mail, title: "Email Us", sub: "naveen.maan2006@gmail.com" },
+                { icon: MapPin, title: "Location", sub: "Chandigarh, India" },
               ].map((item) => (
                 <div key={item.title} className="flex items-center gap-5 group p-4 rounded-2xl hover:bg-muted/50 transition-colors">
                   <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 bg-white shadow-sm border border-border/50 group-hover:scale-110 transition-transform duration-300">
