@@ -10,7 +10,7 @@ const testimonials = [
     role: "Patient since 2021",
     rating: 5,
     text: "The care I received at LifeCare was exceptional. The doctors listened to my concerns and explained everything clearly. Highly recommended!",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
+    image: "https://randomuser.me/api/portraits/men/75.jpg"
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const testimonials = [
     role: "Mother of two",
     rating: 5,
     text: "Dr. Patel was amazing with my kids. The pediatric department is top-notch and the staff made us feel very comfortable.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg"
+    image: "https://randomuser.me/api/portraits/women/76.jpg"
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const testimonials = [
     role: "Cardiac Patient",
     rating: 5,
     text: "State-of-the-art facilities and a very professional team. My heart surgery recovery was faster than I expected thanks to their guidance.",
-    image: "https://randomuser.me/api/portraits/men/67.jpg"
+    image: "https://randomuser.me/api/portraits/men/77.jpg"
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const testimonials = [
     role: "Regular Checkups",
     rating: 5,
     text: "I come here for my annual checkups. The process is smooth, the waiting time is minimal, and the reports are detailed.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg"
+    image: "https://randomuser.me/api/portraits/women/57.jpg"
   },
 ];
 
