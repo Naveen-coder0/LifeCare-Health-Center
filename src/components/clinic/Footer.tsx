@@ -28,7 +28,7 @@ const Footer = () => (
             </div>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-            Providing trusted, compassionate healthcare in {CLINIC.city} since 2014.
+            Providing trusted, compassionate healthcare in {CLINIC.city} since 2016.
             Your health is our greatest priority.
           </p>
 

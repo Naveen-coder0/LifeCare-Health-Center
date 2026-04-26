@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
                                 Data Protection & Security
                             </h2>
                             <p>
-                                At LifeCare Health Center, we are committed to protecting the privacy and security of your personal health information.
+                                At PrimeCare Clinic, we are committed to protecting the privacy and security of your personal health information.
                                 We strictly adhere to HIPAA regulations and global data protection standards to ensure your medical records remains confidential.
                             </p>
                         </div>
@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
                             <div>
                                 <h4 className="font-bold text-lg mb-2">Questions?</h4>
                                 <p className="text-sm text-muted-foreground mb-0">
-                                    If you have any questions about this Privacy Policy, please contact our Data Protection Officer at privacy@lifecare.com.
+                                    If you have any questions about this Privacy Policy, please contact our Data Protection Officer at privacy@primecareclinic.com.
                                 </p>
                             </div>
                         </div>

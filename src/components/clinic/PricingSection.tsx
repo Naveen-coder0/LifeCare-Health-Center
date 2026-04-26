@@ -3,7 +3,7 @@ import { Check, Star, Zap } from "lucide-react";
 const plans = [
   {
     name: "Basic Checkup",
-    price: "₹499",
+    price: "$49",
     period: "per visit",
     description: "Essential health screening for routine wellness monitoring",
     features: [
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: "Full Body Checkup",
-    price: "₹2,499",
+    price: "$249",
     period: "per visit",
     description: "Comprehensive health assessment covering all major organs and systems",
     features: [
@@ -37,7 +37,7 @@ const plans = [
   },
   {
     name: "Dental Package",
-    price: "₹799",
+    price: "$79",
     period: "per visit",
     description: "Complete oral health evaluation and preventive dental care",
     features: [
@@ -53,7 +53,7 @@ const plans = [
   },
   {
     name: "Emergency Consult",
-    price: "₹999",
+    price: "$99",
     period: "flat fee",
     description: "Immediate emergency assessment available 24/7 any day of the week",
     features: [

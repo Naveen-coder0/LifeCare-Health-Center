@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
+import { CLINIC, whatsappBookingUrl } from "@/lib/clinic-config";
 
 const faqs = [
   {
     q: "How do I book an appointment?",
-    a: "You can book an appointment online using our booking form on this website, call us at 9988324455, or visit the clinic in person. We recommend booking online for the fastest confirmation.",
+    a: `You can book an appointment online using our booking form on this website, call us at ${CLINIC.phoneDisplay}, or visit the clinic in person. We recommend booking online for the fastest confirmation.`,
   },
   {
     q: "Do you accept health insurance?",
@@ -28,7 +29,7 @@ const faqs = [
   },
   {
     q: "Do you offer home visit services?",
-    a: "Yes, we offer home visits for elderly patients and those with mobility challenges. Please call us at least 24 hours in advance to schedule a home visit with one of our physicians.",
+    a: `Yes, we offer home visits for elderly patients and those with mobility challenges. Please call us at ${CLINIC.phoneDisplay} at least 24 hours in advance to schedule a home visit with one of our physicians.`,
   },
 ];
 
@@ -55,7 +56,9 @@ const FAQSection = () => {
               Can't find what you're looking for? Our support team is always available to assist with specific inquiries.
             </p>
             <a
-              href="#contact"
+              href={whatsappBookingUrl("Hi! I have a question about your services.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary inline-flex group items-center"
             >
               <MessageCircle className="w-5 h-5 mr-2" />

@@ -32,7 +32,7 @@ const TermsOfService = () => {
                         <section className="space-y-6">
                             <h3>1. Acceptance of Terms</h3>
                             <p>
-                                By accessing and using the LifeCare Health Center website and services, you accept and agree to be bound by the terms and provision of this agreement.
+                                By accessing and using the PrimeCare Clinic website and services, you accept and agree to be bound by the terms and provision of this agreement.
                             </p>
 
                             <h3>2. Use of Services</h3>
@@ -56,7 +56,7 @@ const TermsOfService = () => {
 
                             <h3>6. Limitation of Liability</h3>
                             <p>
-                                LifeCare Health Center shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the site or services.
+                                PrimeCare Clinic shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the site or services.
                             </p>
                         </section>
                     </div>

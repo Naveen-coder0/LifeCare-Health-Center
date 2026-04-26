@@ -64,7 +64,7 @@ const CookiePolicy = () => {
                                 <h4 className="font-bold text-lg mb-2">Cookie Preferences</h4>
                                 <p className="text-sm text-muted-foreground mb-0">
                                     You can change your cookie preferences at any time by visiting your browser settings.
-                                    For more information, please contact us at privacy@lifecare.com.
+                                    For more information, please contact us at privacy@primecareclinic.com.
                                 </p>
                             </div>
                         </div>

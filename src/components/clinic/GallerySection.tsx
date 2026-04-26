@@ -1,6 +1,7 @@
 import { Search } from "lucide-react";
 import clinicInterior from "@/assets/clinic-interior.jpg";
 import heroClinic from "@/assets/hero-clinic.jpg";
+import { CLINIC } from "@/lib/clinic-config";
 
 const images = [
   { src: clinicInterior, alt: "Treatment Room", label: "Treatment Room", span: "md:col-span-2 md:row-span-2" },
@@ -18,11 +19,11 @@ const GallerySection = () => {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <p className="section-label mb-3">Our Facility</p>
           <h2 className="section-title mb-4">
-            State-of-the-Art{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">Clinic Gallery</span>
+            Inside{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">{CLINIC.name}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Take a glimpse into our modern, hygienic, and welcoming healthcare environment.
+            A glimpse into our modern, hygienic, and welcoming clinic in {CLINIC.city}.
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 import { BookOpen, Clock, User, ArrowRight } from "lucide-react";
 import { blogPosts } from "@/data/blog";
 import { Link } from "react-router-dom";
+import { CLINIC } from "@/lib/clinic-config";
 
 const BlogSection = () => {
   // Determine which posts to show (e.g., first 3)
@@ -13,8 +14,8 @@ const BlogSection = () => {
           <div>
             <p className="section-label mb-3">Health Articles</p>
             <h2 className="section-title">
-              Latest Health{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">Insights</span>
+              Health Tips from{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">{CLINIC.shortName} Doctors</span>
             </h2>
           </div>
           <Link
