@@ -4,7 +4,7 @@ import { CLINIC, whatsappBookingUrl } from "@/lib/clinic-config";
 
 const faqs = [
   {
-    q: "Do I need an appointment to visit Medstar Clinic?",
+    q: "Do I need an appointment to visit the clinic?",
     a: `While walk-ins are welcome during working hours, we recommend booking an appointment online or calling us at ${CLINIC.phoneDisplay} to minimize your waiting time and ensure the right specialist is available for you.`,
   },
   {
@@ -16,8 +16,8 @@ const faqs = [
     a: "Yes, we welcome walk-in patients during our working hours. However, for specialist consultations like Cardiology or Gynecology, we recommend booking in advance to avoid waiting. Emergency cases are always attended to immediately.",
   },
   {
-    q: "Which specialties are available at Medstar?",
-    a: "Medstar Multispecialty Clinic offers General Medicine, Cardiology, Pediatrics, Gynecology, Orthopedics, Diabetes Care, Preventive Health Checkups, and Emergency Consultation — all under one roof in Sector 45, Chandigarh.",
+    q: "Which specialties are available?",
+    a: `${CLINIC.name} offers General Medicine, Cardiology, Pediatrics, Gynecology, Orthopedics, Diabetes Care, Preventive Health Checkups, and Emergency Consultation — all under one roof in ${CLINIC.city}.`,
   },
   {
     q: "How do I book an appointment?",

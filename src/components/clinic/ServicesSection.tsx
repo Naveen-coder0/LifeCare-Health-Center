@@ -27,7 +27,7 @@ const ServicesSection = () => (
         </h2>
         <p className="text-lg text-muted-foreground">
           From routine checkups to specialized treatments — all under one roof,
-          close to your home in Sector 45, Chandigarh.
+          close to your home in Chandigarh.
         </p>
       </div>
 

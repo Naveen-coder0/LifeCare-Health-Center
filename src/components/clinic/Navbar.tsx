@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Phone, Menu, X, Heart, MessageCircle } from "lucide-react";
+import { Phone, Menu, X, MessageCircle, Stethoscope } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { CLINIC, whatsappBookingUrl } from "@/lib/clinic-config";
 
@@ -35,132 +35,118 @@ const Navbar = () => {
   };
 
   const links = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#services", label: "Services" },
-    { href: "#doctors", label: "Doctors" },
+    { href: "#home",        label: "Home" },
+    { href: "#about",       label: "About" },
+    { href: "#services",    label: "Services" },
+    { href: "#doctors",     label: "Doctors" },
     { href: "#appointment", label: "Appointment" },
-    { href: "#contact", label: "Contact" },
+    { href: "#contact",     label: "Contact" },
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-border/50"
-          : "bg-transparent py-2"
-      }`}
-    >
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled
+        ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border/40"
+        : "bg-transparent py-2"
+    }`}>
       <div className="container-clinic mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
 
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-primary text-white shadow-lg shadow-primary/20 transition-transform group-hover:scale-110 duration-300">
-              <Heart className="w-5 h-5 fill-white" />
+          {/* ── Logo ── */}
+          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
+            <div className="relative w-10 h-10 rounded-2xl flex items-center justify-center bg-gradient-to-br from-primary to-secondary text-white shadow-lg shadow-primary/25 transition-transform group-hover:scale-110 duration-300">
+              <Stethoscope className="w-5 h-5" />
+              <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white" />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-bold text-xl leading-none text-primary tracking-tight">
+              <span className="font-heading font-black text-lg leading-none text-foreground tracking-tight">
                 {CLINIC.shortName}
               </span>
-              <span className="hidden sm:block text-[10px] font-semibold text-muted-foreground uppercase tracking-widest mt-0.5">
-                Multispecialty Clinic · {CLINIC.city}
+              <span className="hidden sm:block text-[10px] font-bold text-muted-foreground uppercase tracking-widest mt-0.5">
+                Multispecialty Clinic
               </span>
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1 bg-white/50 backdrop-blur-sm px-2 py-1.5 rounded-full border border-border/50 shadow-sm">
+          {/* ── Desktop Nav ── */}
+          <nav className="hidden lg:flex items-center gap-0.5 bg-white/60 backdrop-blur-sm px-2 py-1.5 rounded-full border border-border/40 shadow-sm">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="cursor-pointer px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-white rounded-full transition-all duration-300"
+                className="cursor-pointer px-4 py-2 text-sm font-semibold text-muted-foreground hover:text-primary hover:bg-white rounded-full transition-all duration-200"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* ── Desktop CTAs ── */}
+          <div className="hidden lg:flex items-center gap-2">
             <a
               href={whatsappBookingUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-semibold text-[#25D366] hover:text-[#1ebe5d] transition-colors"
+              className="flex items-center gap-2 text-sm font-bold text-[#25D366] hover:text-[#1ebe5d] transition-colors px-3 py-2 rounded-xl hover:bg-[#25D366]/8"
             >
-              <div className="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center">
-                <MessageCircle className="w-4 h-4" />
+              <div className="w-7 h-7 rounded-full bg-[#25D366]/10 flex items-center justify-center">
+                <MessageCircle className="w-3.5 h-3.5" />
               </div>
               <span className="hidden xl:inline">WhatsApp</span>
             </a>
             <a
               href={`tel:${CLINIC.phone}`}
-              className="flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary transition-colors px-3 py-2 rounded-xl hover:bg-primary/5"
             >
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Phone className="w-4 h-4" />
+              <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <Phone className="w-3.5 h-3.5" />
               </div>
               <span className="hidden xl:inline">{CLINIC.phoneDisplay}</span>
             </a>
             <a
               href="#appointment"
               onClick={(e) => handleNavClick(e, "#appointment")}
-              className="btn-primary text-sm px-6 py-2.5 shadow-lg shadow-primary/25 hover:shadow-primary/40 cursor-pointer"
+              className="btn-primary text-sm px-5 py-2.5 rounded-xl shadow-md shadow-primary/20 hover:shadow-primary/35 cursor-pointer"
             >
               Book Now
             </a>
           </div>
 
-          {/* Mobile Toggle */}
+          {/* ── Mobile Toggle ── */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 rounded-lg text-foreground hover:bg-secondary/10 hover:text-secondary transition-colors"
+            className="lg:hidden w-10 h-10 rounded-xl flex items-center justify-center text-foreground hover:bg-primary/8 hover:text-primary transition-colors"
           >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-border shadow-lg transition-all duration-300 ease-in-out origin-top ${
-          mobileOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
-        }`}
-      >
-        <div className="container-clinic mx-auto px-4 py-6 space-y-2">
+      {/* ── Mobile Menu ── */}
+      <div className={`lg:hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-xl border-t border-border/40 shadow-xl transition-all duration-300 ease-in-out origin-top ${
+        mobileOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+      }`}>
+        <div className="container-clinic mx-auto px-4 py-5 space-y-1">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="flex items-center justify-between p-3 rounded-xl text-base font-medium text-muted-foreground hover:bg-secondary/5 hover:text-secondary hover:pl-4 transition-all duration-300"
+              className="flex items-center gap-3 p-3 rounded-xl text-sm font-semibold text-muted-foreground hover:bg-primary/6 hover:text-primary transition-all duration-200"
             >
+              <span className="w-1.5 h-1.5 rounded-full bg-primary/30" />
               {link.label}
             </a>
           ))}
-          <div className="pt-4 border-t border-border mt-4 flex flex-col gap-3">
-            <a
-              href={`tel:${CLINIC.phone}`}
-              className="flex items-center justify-center gap-2 p-3 rounded-xl font-semibold bg-primary/10 text-primary"
-            >
-              <Phone className="w-4 h-4" /> Call {CLINIC.phoneDisplay}
+          <div className="pt-4 border-t border-border/40 mt-3 flex flex-col gap-2.5">
+            <a href={`tel:${CLINIC.phone}`} className="flex items-center justify-center gap-2 p-3 rounded-xl font-bold text-sm bg-primary/8 text-primary">
+              <Phone className="w-4 h-4" /> {CLINIC.phoneDisplay}
             </a>
-            <a
-              href={whatsappBookingUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 p-3 rounded-xl font-semibold bg-[#25D366]/10 text-[#25D366]"
-            >
+            <a href={whatsappBookingUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 p-3 rounded-xl font-bold text-sm bg-[#25D366]/10 text-[#25D366]">
               <MessageCircle className="w-4 h-4" /> Chat on WhatsApp
             </a>
-            <a
-              href="#appointment"
-              onClick={(e) => handleNavClick(e, "#appointment")}
-              className="btn-primary w-full justify-center py-3.5"
-            >
+            <a href="#appointment" onClick={(e) => handleNavClick(e, "#appointment")} className="btn-primary w-full justify-center py-3.5 rounded-xl">
               Book Appointment
             </a>
           </div>

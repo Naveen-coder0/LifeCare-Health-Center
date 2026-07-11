@@ -8,13 +8,13 @@ const departments = [
 ];
 
 const doctorsByDept: Record<string, string[]> = {
-  "General Medicine": ["Dr. Mohit"],
-  "Cardiology": ["Dr. Gurtej Sidhu"],
-  "Pediatrics": ["Dr. Arjun Mehta"],
-  "Gynecology": ["Dr. Priya Sharma"],
+  "General Medicine": ["Dr. Anil Sharma"],
+  "Cardiology": ["Dr. Rajeev Kapoor"],
+  "Pediatrics": ["Dr. Vikram Nair"],
+  "Gynecology": ["Dr. Sunita Verma"],
   "Orthopedics": ["Dr. On-Call Specialist"],
-  "Diabetes Care": ["Dr. Mohit"],
-  "Preventive Health Checkup": ["Dr. Mohit", "Dr. Gurtej Sidhu"],
+  "Diabetes Care": ["Dr. Anil Sharma"],
+  "Preventive Health Checkup": ["Dr. Anil Sharma", "Dr. Rajeev Kapoor"],
   "Emergency Consultation": ["Dr. On-Call Physician"],
 };
 
@@ -76,8 +76,8 @@ const AppointmentSection = () => {
 
   return (
     <section id="appointment" className="section-padding bg-background relative overflow-hidden">
-      <div className="absolute -left-20 top-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" />
-      <div className="absolute top-0 right-0 w-80 h-80 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000" />
+      <div className="absolute -left-20 top-40 w-80 h-80 bg-primary/8 rounded-full filter blur-3xl" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-secondary/8 rounded-full filter blur-3xl" />
 
       <div className="container-clinic mx-auto relative z-10">
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-20 items-start">
