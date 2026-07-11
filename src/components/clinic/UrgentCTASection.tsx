@@ -2,7 +2,7 @@ import { Calendar, Phone, MessageCircle, Clock } from "lucide-react";
 import { CLINIC, whatsappBookingUrl } from "@/lib/clinic-config";
 
 const UrgentCTASection = () => (
-  <section className="py-20 px-4 sm:px-6 relative overflow-hidden bg-gradient-to-br from-primary via-blue-700 to-primary">
+  <section className="py-20 px-4 sm:px-6 relative overflow-hidden bg-gradient-to-br from-primary via-teal-700 to-secondary">
     {/* Decorative blobs */}
     <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
     <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none" />

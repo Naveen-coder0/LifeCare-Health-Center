@@ -3,19 +3,19 @@ import { Calendar, User, Phone, Mail, Clock, CheckCircle2, MapPin, Zap, MessageC
 import { CLINIC, whatsappBookingUrl } from "@/lib/clinic-config";
 
 const departments = [
-  "General Physician", "Dental Care", "Pediatrics", "Gynecology",
-  "Orthopedics", "Diagnostics", "Vaccination", "Emergency Care",
+  "General Medicine", "Cardiology", "Pediatrics", "Gynecology",
+  "Orthopedics", "Diabetes Care", "Preventive Health Checkup", "Emergency Consultation",
 ];
 
 const doctorsByDept: Record<string, string[]> = {
-  "General Physician": ["Dr. Sarah Mitchell", "Dr. Mark Johnson"],
-  "Dental Care": ["Dr. James Carter", "Dr. Priya Sharma"],
-  "Pediatrics": ["Dr. Aisha Patel", "Dr. Tom Wilson"],
-  "Gynecology": ["Dr. Laura Kim", "Dr. Nina Roberts"],
-  "Orthopedics": ["Dr. Robert Chen", "Dr. Alan Scott"],
-  "Diagnostics": ["Dr. Emily Davis"],
-  "Vaccination": ["Dr. Susan Lee"],
-  "Emergency Care": ["Dr. On-Call Physician"],
+  "General Medicine": ["Dr. Mohit"],
+  "Cardiology": ["Dr. Gurtej Sidhu"],
+  "Pediatrics": ["Dr. Arjun Mehta"],
+  "Gynecology": ["Dr. Priya Sharma"],
+  "Orthopedics": ["Dr. On-Call Specialist"],
+  "Diabetes Care": ["Dr. Mohit"],
+  "Preventive Health Checkup": ["Dr. Mohit", "Dr. Gurtej Sidhu"],
+  "Emergency Consultation": ["Dr. On-Call Physician"],
 };
 
 const timeSlots = [

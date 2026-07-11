@@ -64,7 +64,7 @@ const Navbar = () => {
                 {CLINIC.shortName}
               </span>
               <span className="hidden sm:block text-[10px] font-semibold text-muted-foreground uppercase tracking-widest mt-0.5">
-                Health Center · {CLINIC.city}
+                Multispecialty Clinic · {CLINIC.city}
               </span>
             </div>
           </Link>

@@ -3,7 +3,7 @@ import { Check, Star, Zap } from "lucide-react";
 const plans = [
   {
     name: "Basic Checkup",
-    price: "$49",
+    price: "₹299",
     period: "per visit",
     description: "Essential health screening for routine wellness monitoring",
     features: [
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: "Full Body Checkup",
-    price: "$249",
+    price: "₹1,499",
     period: "per visit",
     description: "Comprehensive health assessment covering all major organs and systems",
     features: [
@@ -36,15 +36,15 @@ const plans = [
     btnColor: "bg-white text-primary hover:bg-white/90",
   },
   {
-    name: "Dental Package",
-    price: "$79",
+    name: "Diabetes Care",
+    price: "₹499",
     period: "per visit",
-    description: "Complete oral health evaluation and preventive dental care",
+    description: "Specialized diabetes management with HbA1c monitoring and counseling",
     features: [
-      "Dental X-Rays",
-      "Teeth Cleaning",
-      "Cavity Screening",
-      "Gum Assessment",
+      "HbA1c Test",
+      "Blood Sugar Monitoring",
+      "Diet Counseling",
+      "Medication Review",
       "Treatment Plan",
     ],
     popular: false,
@@ -53,7 +53,7 @@ const plans = [
   },
   {
     name: "Emergency Consult",
-    price: "$99",
+    price: "₹599",
     period: "flat fee",
     description: "Immediate emergency assessment available 24/7 any day of the week",
     features: [
@@ -80,7 +80,7 @@ const PricingSection = () => {
           </div>
           <h2 className="section-title mb-4">
             Transparent{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">Pricing Plans</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Pricing Plans</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Quality healthcare shouldn't break the bank. Choose a package that fits
@@ -145,7 +145,7 @@ const PricingSection = () => {
         </div>
 
         <p className="text-center text-xs mt-12 text-muted-foreground">
-          * Prices are inclusive of consultation fees. Insurance accepted. Call us for corporate packages.
+          * Prices are indicative. Final charges may vary based on tests and consultation. Call us for corporate & family packages.
         </p>
       </div>
     </section>

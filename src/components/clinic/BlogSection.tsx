@@ -15,7 +15,7 @@ const BlogSection = () => {
             <p className="section-label mb-3">Health Articles</p>
             <h2 className="section-title">
               Health Tips from{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">{CLINIC.shortName} Doctors</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">{CLINIC.shortName} Doctors</span>
             </h2>
           </div>
           <Link

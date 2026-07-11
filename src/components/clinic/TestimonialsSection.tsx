@@ -6,37 +6,37 @@ import { CLINIC } from "@/lib/clinic-config";
 const testimonials = [
   {
     id: 1,
-    name: "Rajesh Kumar",
-    role: "General Checkup · Chandigarh",
+    name: "Harpreet Singh",
+    role: "General Checkup · Sector 45, Chandigarh",
     rating: 5,
-    text: "Dr. Mitchell was incredibly thorough. She explained everything clearly and I left feeling confident about my health. The clinic is clean, modern, and the staff is very welcoming.",
+    text: "The doctors at Medstar are incredibly thorough and professional. Dr. Mohit took the time to explain everything clearly and I left feeling confident about my health. The clinic is clean, modern, and the staff is very welcoming.",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
     date: "2 weeks ago",
   },
   {
     id: 2,
-    name: "Priya Sharma",
+    name: "Simran Kaur",
     role: "Pediatrics · Mother of two",
     rating: 5,
-    text: "Dr. Patel is amazing with kids. My 4-year-old was scared but she made him laugh and feel at ease. The pediatric department is top-notch. We won't go anywhere else.",
+    text: "Excellent pediatric care! The doctor was so patient and gentle with my kids. My 5-year-old was nervous but felt completely at ease. We've been coming here for over a year and couldn't be happier with the care.",
     image: "https://randomuser.me/api/portraits/women/76.jpg",
     date: "1 month ago",
   },
   {
     id: 3,
-    name: "Amit Patel",
-    role: "Orthopedics · Sports Injury",
+    name: "Rajinder Sharma",
+    role: "Cardiology · Heart Checkup",
     rating: 5,
-    text: "Dr. Chen diagnosed my knee injury in one visit after two other clinics missed it. His treatment plan had me back on the field in 6 weeks. Truly exceptional care.",
+    text: "Dr. Gurtej Sidhu is an outstanding cardiologist. His diagnosis was spot-on and his treatment plan has made a real difference. The ECG and echo facilities are excellent. Highly recommend for any cardiac concerns.",
     image: "https://randomuser.me/api/portraits/men/77.jpg",
     date: "3 weeks ago",
   },
   {
     id: 4,
-    name: "Sneha Gupta",
-    role: "Annual Checkup · Regular Patient",
+    name: "Neha Verma",
+    role: "Preventive Checkup · Regular Patient",
     rating: 5,
-    text: "I've been coming here for 3 years. The booking process is seamless, waiting time is minimal, and the reports are always detailed. Highly recommend to everyone in Chandigarh.",
+    text: "I've been visiting Medstar for my annual health checkups and the experience is always seamless. Minimal waiting time, detailed reports, and genuinely caring staff. Best clinic in Sector 45 without a doubt.",
     image: "https://randomuser.me/api/portraits/women/57.jpg",
     date: "1 week ago",
   },
@@ -59,10 +59,10 @@ const TestimonialsSection = () => {
         {/* Trust stats bar */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
           {[
-            { icon: Star, value: CLINIC.stats.rating, label: "Average Rating", color: "text-amber-500" },
+            { icon: Star, value: CLINIC.stats.rating, label: "Google Rating", color: "text-amber-500" },
             { icon: Users, value: CLINIC.stats.patients, label: "Happy Patients", color: "text-primary" },
             { icon: ThumbsUp, value: "98%", label: "Would Recommend", color: "text-green-600" },
-            { icon: Star, value: "500+", label: "Google Reviews", color: "text-amber-500" },
+            { icon: Star, value: `${CLINIC.stats.reviews}+`, label: "Google Reviews", color: "text-amber-500" },
           ].map((stat) => (
             <div key={stat.label} className="bg-white rounded-2xl p-5 text-center border border-border/50 shadow-sm">
               <stat.icon className={`w-6 h-6 mx-auto mb-2 ${stat.color} fill-current`} />

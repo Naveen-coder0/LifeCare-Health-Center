@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import { services } from "@/data/services";
 import { CLINIC } from "@/lib/clinic-config";
 
-// Patient-outcome benefit lines per service
 const benefits: Record<string, string> = {
-  "general-physician": "Get diagnosed & treated same day",
-  "dental-care": "Pain-free procedures, brighter smile",
-  "pediatrics": "Child-friendly care parents trust",
+  "general-medicine": "Same-day consultation available",
+  "cardiology": "Expert cardiac diagnosis & care",
+  "pediatrics": "Child-friendly, trusted by parents",
   "gynecology": "Private, compassionate women's care",
   "orthopedics": "Restore mobility, reduce pain fast",
-  "diagnostics": "Accurate results in under 2 hours",
-  "vaccination": "Protect your family, stay healthy",
-  "emergency-care": "Rapid response, 24/7 availability",
+  "diabetes-care": "Personalized diabetes management",
+  "preventive-health": "Early detection saves lives",
+  "emergency-consultation": "Rapid response, 24/7 availability",
 };
 
 const ServicesSection = () => (
@@ -21,14 +20,14 @@ const ServicesSection = () => (
       <div className="text-center max-w-2xl mx-auto mb-14">
         <p className="section-label mb-3">Our Services</p>
         <h2 className="section-title mb-4">
-          Healthcare Services in{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">
+          Multispecialty Healthcare in{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             {CLINIC.city}
           </span>
         </h2>
         <p className="text-lg text-muted-foreground">
           From routine checkups to specialized treatments — all under one roof,
-          close to home.
+          close to your home in Sector 45, Chandigarh.
         </p>
       </div>
 
@@ -53,7 +52,6 @@ const ServicesSection = () => (
               {service.desc}
             </p>
 
-            {/* Patient outcome benefit */}
             <div className="flex items-center gap-2 text-xs font-semibold text-green-700 bg-green-50 rounded-lg px-3 py-2 mb-5">
               <CheckCircle2 className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
               {benefits[service.id] ?? "Expert care, real results"}

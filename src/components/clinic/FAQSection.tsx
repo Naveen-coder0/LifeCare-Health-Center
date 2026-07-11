@@ -4,32 +4,32 @@ import { CLINIC, whatsappBookingUrl } from "@/lib/clinic-config";
 
 const faqs = [
   {
-    q: "How do I book an appointment?",
-    a: `You can book an appointment online using our booking form on this website, call us at ${CLINIC.phoneDisplay}, or visit the clinic in person. We recommend booking online for the fastest confirmation.`,
+    q: "Do I need an appointment to visit Medstar Clinic?",
+    a: `While walk-ins are welcome during working hours, we recommend booking an appointment online or calling us at ${CLINIC.phoneDisplay} to minimize your waiting time and ensure the right specialist is available for you.`,
   },
   {
-    q: "Do you accept health insurance?",
-    a: "Yes, we accept most major insurance plans including BlueCross BlueShield, Aetna, Cigna, UnitedHealthcare, Medicare, and Medicaid. Please call us to verify your specific plan coverage.",
+    q: "What are your consultation timings?",
+    a: "We are open Monday to Saturday from 9:00 AM to 8:00 PM, and on Sundays from 10:00 AM to 2:00 PM. Emergency consultations are available 24/7. Please call us for after-hours emergencies.",
+  },
+  {
+    q: "Do you accept walk-in patients?",
+    a: "Yes, we welcome walk-in patients during our working hours. However, for specialist consultations like Cardiology or Gynecology, we recommend booking in advance to avoid waiting. Emergency cases are always attended to immediately.",
+  },
+  {
+    q: "Which specialties are available at Medstar?",
+    a: "Medstar Multispecialty Clinic offers General Medicine, Cardiology, Pediatrics, Gynecology, Orthopedics, Diabetes Care, Preventive Health Checkups, and Emergency Consultation — all under one roof in Sector 45, Chandigarh.",
+  },
+  {
+    q: "How do I book an appointment?",
+    a: `You can book an appointment using our online booking form on this website, call us at ${CLINIC.phoneDisplay}, message us on WhatsApp, or visit the clinic directly. Online booking gets you the fastest confirmation.`,
   },
   {
     q: "Is emergency care available 24/7?",
-    a: "Absolutely. Our emergency department operates 24 hours a day, 7 days a week, 365 days a year. We have dedicated trauma teams and on-call specialists available at all times.",
-  },
-  {
-    q: "What payment methods do you accept?",
-    a: "We accept cash, all major credit/debit cards, mobile payments (Apple Pay, Google Pay), bank transfers, and insurance billing. EMI options are available for select procedures.",
+    a: `Yes. Our emergency consultation line is available 24 hours a day, 7 days a week. For urgent medical needs, call us at ${CLINIC.phoneDisplay} and our on-call doctor will assist you immediately.`,
   },
   {
     q: "How long are typical wait times?",
-    a: "With our advanced booking system, most booked appointments wait less than 15 minutes. Walk-in patients are seen within 30–45 minutes during off-peak hours. Emergency cases receive immediate attention.",
-  },
-  {
-    q: "Can I get my medical records online?",
-    a: "Yes. All patients receive access to our patient portal where they can view lab results, prescriptions, appointment history, and doctor notes securely from any device.",
-  },
-  {
-    q: "Do you offer home visit services?",
-    a: `Yes, we offer home visits for elderly patients and those with mobility challenges. Please call us at ${CLINIC.phoneDisplay} at least 24 hours in advance to schedule a home visit with one of our physicians.`,
+    a: "With our appointment system, most booked patients are seen within 10–15 minutes. Walk-in patients are typically attended to within 20–30 minutes during regular hours. We prioritize minimal waiting time for all our patients.",
   },
 ];
 

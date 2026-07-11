@@ -4,12 +4,12 @@ import heroClinic from "@/assets/hero-clinic.jpg";
 import { CLINIC } from "@/lib/clinic-config";
 
 const images = [
-  { src: clinicInterior, alt: "Treatment Room", label: "Treatment Room", span: "md:col-span-2 md:row-span-2" },
-  { src: heroClinic, alt: "Reception Area", label: "Reception Area", span: "md:col-span-1 md:row-span-1" },
-  { src: clinicInterior, alt: "Diagnostic Lab", label: "Diagnostic Lab", span: "md:col-span-1 md:row-span-1" },
+  { src: clinicInterior, alt: "Clinic Exterior", label: "Clinic Exterior", span: "md:col-span-2 md:row-span-2" },
+  { src: heroClinic, alt: "Reception", label: "Reception", span: "md:col-span-1 md:row-span-1" },
+  { src: clinicInterior, alt: "Laboratory", label: "Laboratory", span: "md:col-span-1 md:row-span-1" },
   { src: heroClinic, alt: "Consultation Room", label: "Consultation Room", span: "md:col-span-1 md:row-span-2" },
-  { src: clinicInterior, alt: "Medical Equipment", label: "Medical Equipment", span: "md:col-span-1 md:row-span-1" },
-  { src: heroClinic, alt: "Patient Ward", label: "Patient Ward", span: "md:col-span-2 md:row-span-1" },
+  { src: clinicInterior, alt: "Doctors", label: "Our Doctors", span: "md:col-span-1 md:row-span-1" },
+  { src: heroClinic, alt: "Waiting Area", label: "Waiting Area", span: "md:col-span-2 md:row-span-1" },
 ];
 
 const GallerySection = () => {
@@ -20,7 +20,7 @@ const GallerySection = () => {
           <p className="section-label mb-3">Our Facility</p>
           <h2 className="section-title mb-4">
             Inside{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">{CLINIC.name}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">{CLINIC.name}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             A glimpse into our modern, hygienic, and welcoming clinic in {CLINIC.city}.

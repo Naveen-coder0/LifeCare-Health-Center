@@ -30,7 +30,7 @@ const ContactSection = () => {
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <p className="section-label mb-3">Get in Touch</p>
           <h2 className="section-title mb-4">
-            Visit Us in <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">{CLINIC.city}</span>
+            Visit Us in <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">{CLINIC.city}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Have questions? Our team is ready to help you book your appointment.

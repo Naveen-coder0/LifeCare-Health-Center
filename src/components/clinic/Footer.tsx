@@ -23,20 +23,20 @@ const Footer = () => (
                 {CLINIC.shortName}
               </span>
               <span className="text-[10px] text-slate-400 uppercase tracking-widest">
-                Health Center · {CLINIC.city}
+                Multispecialty Clinic · {CLINIC.city}
               </span>
             </div>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-            Providing trusted, compassionate healthcare in {CLINIC.city} since 2016.
-            Your health is our greatest priority.
+            Trusted multispecialty healthcare in {CLINIC.city}.
+            Experienced doctors, compassionate care, and personalized treatment for every family.
           </p>
 
           {/* Trust badges */}
           <div className="flex flex-wrap gap-2">
             {[
-              { icon: Shield, label: "NABH Certified" },
-              { icon: Award, label: "ISO 9001" },
+              { icon: Shield, label: "5.0 Google Rating" },
+              { icon: Award, label: "59+ Reviews" },
               { icon: Clock, label: "24/7 Emergency" },
             ].map((b) => (
               <div key={b.label} className="flex items-center gap-1.5 bg-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-300">
@@ -87,12 +87,12 @@ const Footer = () => (
           <h4 className="font-heading font-bold text-lg mb-6 text-white">Our Services</h4>
           <ul className="space-y-3">
             {[
-              { label: "General Physician", id: "general-physician" },
-              { label: "Dental Care", id: "dental-care" },
+              { label: "General Medicine", id: "general-medicine" },
+              { label: "Cardiology", id: "cardiology" },
               { label: "Pediatrics", id: "pediatrics" },
-              { label: "Orthopedics", id: "orthopedics" },
               { label: "Gynecology", id: "gynecology" },
-              { label: "Emergency Care", id: "emergency-care" },
+              { label: "Orthopedics", id: "orthopedics" },
+              { label: "Diabetes Care", id: "diabetes-care" },
             ].map((s) => (
               <li key={s.id}>
                 <Link to={`/services/${s.id}`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2 group">

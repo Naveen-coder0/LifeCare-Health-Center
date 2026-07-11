@@ -3,10 +3,10 @@ import clinicInterior from "@/assets/clinic-interior.jpg";
 import { CLINIC } from "@/lib/clinic-config";
 
 const values = [
-  { icon: UserCheck, title: "Experienced Doctors", desc: "Board-certified specialists with years of hands-on clinical expertise." },
-  { icon: Zap, title: "Advanced Equipment", desc: "State-of-the-art diagnostic and treatment technology on-site." },
-  { icon: Award, title: "Affordable Pricing", desc: "Transparent pricing with flexible payment plans for every patient." },
-  { icon: HeartHandshake, title: "24/7 Support", desc: "Round-the-clock emergency care and patient support, always." },
+  { icon: UserCheck, title: "Experienced Doctors", desc: "Qualified specialists with years of hands-on clinical expertise across multiple disciplines." },
+  { icon: Zap, title: "Advanced Equipment", desc: "State-of-the-art diagnostic and treatment technology for accurate results." },
+  { icon: Award, title: "Affordable Treatment", desc: "Transparent, patient-friendly pricing with no hidden charges." },
+  { icon: HeartHandshake, title: "24/7 Support", desc: "Round-the-clock emergency care and patient support, always available." },
 ];
 
 const AboutSection = () => (
@@ -24,28 +24,29 @@ const AboutSection = () => (
           </div>
           <h2 className="section-title mb-6">
             Your Health Is Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Greatest Priority
             </span>
           </h2>
           <p className="text-lg leading-relaxed mb-6 text-muted-foreground">
-            {CLINIC.name} has been a trusted pillar of healthcare in {CLINIC.city} for over {CLINIC.stats.years} years.
-            We combine <strong className="text-foreground">cutting-edge technology</strong> with genuine compassion
-            to deliver care that makes a real difference in people's lives.
+            {CLINIC.name} is a trusted multispecialty healthcare destination in {CLINIC.city}.
+            We combine <strong className="text-foreground">experienced doctors</strong> with genuine compassion
+            to deliver care that makes a real difference in every patient's life.
           </p>
           <p className="text-base leading-relaxed mb-8 text-muted-foreground">
-            Our multidisciplinary team of specialists works together to provide comprehensive,
-            patient-centered care across all major medical disciplines — right here in {CLINIC.city}.
+            Located in Sector 45, Burail, our clinic offers comprehensive services across General Medicine,
+            Cardiology, Pediatrics, Gynecology, Orthopedics, Diabetes Care, and more — all under one roof,
+            close to your home in {CLINIC.city}.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              "NABH Accredited",
-              "ISO 9001:2015 Certified",
+              "5.0 Google Rating",
+              "59+ Verified Reviews",
               `${CLINIC.stats.patients} Happy Patients`,
-              "Advanced Digital Records",
-              "Multilingual Staff",
-              "Insurance Support",
+              "Multispecialty Under One Roof",
+              "Patient-First Approach",
+              "Affordable Consultation",
             ].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
@@ -75,7 +76,7 @@ const AboutSection = () => (
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <div className="text-4xl font-bold font-heading text-primary mb-1">{CLINIC.stats.years}</div>
-                  <div className="text-sm font-medium text-muted-foreground">Years of Excellence</div>
+                  <div className="text-sm font-medium text-muted-foreground">Years of Service</div>
                 </div>
                 <div className="h-12 w-px bg-border" />
                 <div>
@@ -84,8 +85,8 @@ const AboutSection = () => (
                 </div>
                 <div className="h-12 w-px bg-border" />
                 <div>
-                  <div className="text-4xl font-bold font-heading text-primary mb-1">{CLINIC.stats.patients}</div>
-                  <div className="text-sm font-medium text-muted-foreground">Happy Patients</div>
+                  <div className="text-4xl font-bold font-heading text-primary mb-1">{CLINIC.stats.reviews}+</div>
+                  <div className="text-sm font-medium text-muted-foreground">Google Reviews</div>
                 </div>
               </div>
             </div>
@@ -99,14 +100,14 @@ const AboutSection = () => (
           {
             icon: Target,
             title: "Our Mission",
-            desc: `To provide accessible, compassionate, and technologically advanced medical care that improves the health and wellbeing of every patient we serve in ${CLINIC.city} and beyond.`,
+            desc: `To provide accessible, compassionate, and quality medical care that improves the health and wellbeing of every patient and family we serve in ${CLINIC.city} and beyond.`,
             gradient: "bg-gradient-to-br from-primary to-blue-700",
             shadow: "shadow-primary/25",
           },
           {
             icon: Eye,
             title: "Our Vision",
-            desc: `To be the most trusted healthcare destination in ${CLINIC.city} — a place where innovation meets empathy, and where every patient feels heard, valued, and healed.`,
+            desc: `To be the most trusted multispecialty healthcare destination in ${CLINIC.city} — a place where expertise meets empathy, and where every patient feels heard, valued, and healed.`,
             gradient: "bg-gradient-to-br from-secondary to-teal-700",
             shadow: "shadow-secondary/25",
           },
